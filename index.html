@@ -1,35 +1,101 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            REVIEW HTML-CSS
-        </title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <h2>Hello World!</h2>
-        <h2>Hello World!</h2>
-        <h3>Hello World!</h3>
-        <h4>Hello World!</h4>
-        <h5>Hello World!</h5>
-        <h6>Hello World!</h6>
-        <p>Hello World!
-        </p>
-        <ul>Unordered List
-            <li>item 1</li>
-            <li>item 2</li>
-        </ul>
-        <ol>Ordered List
-            <li>Item 1</li>
-            <li>Item 2</li>
-        </ol>
-        <a href= "http://www.w3school.com">W3 schools sites</a>
-        <br>
-        <a href="README.md">READ ME</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Your Name</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle color theme">🌙</button>
+    </div>
+  </header>
 
-        <img src="yak-Tibet-Autonomous-Region-China.webp" alt="tibet">
-    </body>
+  <main>
+    <section id="hero" class="hero container">
+      <img src="assets/avatar.svg" alt="Your avatar" class="avatar">
+      <div>
+        <h2 class="title">Hi, I’m <strong>Your Name</strong></h2>
+        <p class="subtitle">A front-end developer who builds accessible, responsive websites.</p>
+        <p class="cta"><a href="#projects" class="btn">See my work →</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>Short bio: Replace this text with a 1–2 sentence introduction about yourself.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="project-grid">
+        <article class="card">
+          <div class="card-image" aria-hidden></div>
+          <h4>Project One</h4>
+          <p>Short project description. Link to repo or demo.</p>
+          <p><a href="#" class="link">View project →</a></p>
+        </article>
+        <article class="card">
+          <div class="card-image" aria-hidden></div>
+          <h4>Project Two</h4>
+          <p>Short project description. Link to repo or demo.</p>
+          <p><a href="#" class="link">View project →</a></p>
+        </article>
+        <article class="card">
+          <div class="card-image" aria-hidden></div>
+          <h4>Project Three</h4>
+          <p>Short project description. Link to repo or demo.</p>
+          <p><a href="#" class="link">View project →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h3>Skills</h3>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you'd like to work together, send me a message:</p>
+      <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p class="alt">Prefer email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© Your Name — <a href="https://github.com/" aria-label="GitHub">GitHub</a> • <a href="https://linkedin.com/" aria-label="LinkedIn">LinkedIn</a></small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
-
-
-
