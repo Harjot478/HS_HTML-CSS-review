@@ -3,60 +3,67 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Name — Portfolio</title>
+  <title>Harjot Singh — Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
     <div class="container header-inner">
-      <h1 class="logo">Your Name</h1>
-      <nav class="nav">
+      <h1 class="logo">Harjot Singh</h1>
+      <nav class="nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
       <button id="theme-toggle" aria-label="Toggle color theme">🌙</button>
     </div>
   </header>
 
-  <main>
+  <main id="main" role="main">
     <section id="hero" class="hero container">
-      <img src="assets/avatar.svg" alt="Your avatar" class="avatar">
+      <img src="assets/avatar.svg" alt="Portrait illustration of Harjot Singh" class="avatar">
       <div>
-        <h2 class="title">Hi, I’m <strong>Your Name</strong></h2>
-        <p class="subtitle">A front-end developer who builds accessible, responsive websites.</p>
+        <h2 class="title">Hi, I’m <strong>Harjot Singh</strong></h2>
+        <p class="subtitle">High school student creating animations, interactive sketches, and holiday-themed sound projects.</p>
         <p class="cta"><a href="#projects" class="btn">See my work →</a></p>
       </div>
     </section>
 
     <section id="about" class="container about">
       <h3>About</h3>
-      <p>Short bio: Replace this text with a 1–2 sentence introduction about yourself.</p>
+      <p>I'm Harjot Singh — a student who enjoys creative coding using CodeSkulptor and EarSketch. I focus on animation and audio projects and enjoy documenting my process in a simple portfolio.</p>
     </section>
 
     <section id="projects" class="container projects">
       <h3>Projects</h3>
       <div class="project-grid">
-        <article class="card">
+        <article class="card" aria-labelledby="p1-title">
           <div class="card-image" aria-hidden></div>
-          <h4>Project One</h4>
-          <p>Short project description. Link to repo or demo.</p>
-          <p><a href="#" class="link">View project →</a></p>
+          <h4 id="p1-title">Holidays (draw) Animation Project</h4>
+          <p class="project-meta"><strong>Type:</strong> Animation • <strong>Tools:</strong> CodeSkulptor</p>
+          <p>A winter holiday scene where snowflakes fall continuously from the sky while ornaments change colors on the tree.</p>
+          <p><a href="https://py3.codeskulptor.org/#user310_b3c7SYk5aM33QeL.py" class="link" target="_blank" rel="noopener noreferrer">View project →</a></p>
         </article>
-        <article class="card">
+
+        <article class="card" aria-labelledby="p2-title">
           <div class="card-image" aria-hidden></div>
-          <h4>Project Two</h4>
-          <p>Short project description. Link to repo or demo.</p>
-          <p><a href="#" class="link">View project →</a></p>
+          <h4 id="p2-title">Holidays Drawing Project</h4>
+          <p class="project-meta"><strong>Type:</strong> Portfolio / Tech Manual • <strong>Tools:</strong> CodeSkulptor</p>
+          <p>In this assignment I was tasked with creating a snowman and a Christmas tree — a practice in shapes and layering.</p>
+          <p><a href="https://py3.codeskulptor.org/#user310_MRWGb391oFt5K2k.py" class="link" target="_blank" rel="noopener noreferrer">View project →</a></p>
         </article>
-        <article class="card">
+
+        <article class="card" aria-labelledby="p3-title">
           <div class="card-image" aria-hidden></div>
-          <h4>Project Three</h4>
-          <p>Short project description. Link to repo or demo.</p>
-          <p><a href="#" class="link">View project →</a></p>
+          <h4 id="p3-title">Holiday Remix Challenge</h4>
+          <p class="project-meta"><strong>Type:</strong> Sound • <strong>Tools:</strong> EarSketch</p>
+          <p>Created a holiday-themed sound using EarSketch, focusing on rhythm and layering to evoke a festive mood.</p>
+          <p><a href="https://earsketch.gatech.edu/earsketch2/?sharing=aY5XjuSO4s-npxfcyWn7Hw" class="link" target="_blank" rel="noopener noreferrer">Listen / Open →</a></p>
         </article>
       </div>
     </section>
@@ -86,13 +93,14 @@
 
         <button type="submit" class="btn">Send</button>
       </form>
-      <p class="alt">Prefer email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p class="alt">Prefer email: <a href="mailto:harjots2789@nycstudents.net">harjots2789@nycstudents.net</a></p>
+      <p class="muted">Tip: to use the form, replace the Formspree action with your form ID.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <small>© Your Name — <a href="https://github.com/" aria-label="GitHub">GitHub</a> • <a href="https://linkedin.com/" aria-label="LinkedIn">LinkedIn</a></small>
+      <small>© Harjot Singh — <a href="https://github.com/Harjot478" aria-label="GitHub">GitHub</a> • <a href="https://linkedin.com/" aria-label="LinkedIn">LinkedIn</a></small>
     </div>
   </footer>
 
