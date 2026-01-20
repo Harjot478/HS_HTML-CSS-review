@@ -61,14 +61,6 @@ body {
   font-weight: 700;
 }
 
-.profile-pic {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid rgba(0, 0, 0, 0.06);
-  margin-right: 12px;
-}
-
 .nav a {
   margin-left: 16px;
   color: #6b7280;
@@ -90,8 +82,8 @@ body {
 }
 
 .avatar {
-  width: 96px;
-  height: 96px;
+  width: 64px;
+  height: 64px;
   border-radius: 12px;
   border: 2px solid rgba(0, 0, 0, 0.06);
 }
