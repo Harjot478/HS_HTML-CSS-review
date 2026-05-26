@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="roblox-dark">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" role="banner">
     <div class="container header-inner">
@@ -19,6 +19,7 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="true" title="Toggle theme">Toggle Theme</button>
 
     </div>
   </header>
@@ -97,5 +98,23 @@
       <small>© Harjot Singh, <a href="https://github.com/Harjot478" aria-label="GitHub">GitHub</a> • <a href="https://www.linkedin.com/in/harjot-singh-a86337390" aria-label="LinkedIn">LinkedIn</a> • <a href="mailto:harjots2789@nycstudents.net">Email</a></small>
     </div>
   </footer>
+  <script>
+    (function(){
+      const body = document.body;
+      const btn = document.getElementById('theme-toggle');
+      try{
+        const stored = localStorage.getItem('theme');
+        if(stored === 'dark') body.classList.add('roblox-dark');
+        else if(stored === 'light') body.classList.remove('roblox-dark');
+      }catch(e){}
+      if(btn){
+        btn.addEventListener('click', function(){
+          const isNowDark = body.classList.toggle('roblox-dark');
+          try{ localStorage.setItem('theme', isNowDark ? 'dark' : 'light'); }catch(e){}
+          btn.setAttribute('aria-pressed', isNowDark ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
