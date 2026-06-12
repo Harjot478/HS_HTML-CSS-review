@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Harjot Singh Portfolio</title>
+  <title>Harjot Singh | Game Design Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,92 +14,489 @@
     <div class="container header-inner">
       <h1 class="logo">Harjot Singh</h1>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#home">Home</a>
+        <a href="#career-goals">Career Goals</a>
+        <a href="#game-design">Game Design</a>
+        <a href="#iterative-design">Design Process</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#reflection">Reflection</a>
         <a href="#contact">Contact</a>
       </nav>
-        <button id="theme-toggle" class="theme-toggle" aria-pressed="true" title="Toggle theme">Toggle Theme</button>
-
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="true" title="Toggle theme">Toggle Theme</button>
     </div>
   </header>
 
   <main id="main" role="main">
-    <section id="hero" class="hero container">
+    <!-- HERO / HOME SECTION -->
+    <section id="home" class="hero container">
       <div class="hero-content">
         <img src="assets/profile.png" alt="Profile picture of Harjot Singh" class="avatar">
         <div class="hero-text">
-          <h2 class="title">Hi, I’m <strong>Harjot Singh</strong></h2>
-          <p class="subtitle">High school student creating animations, interactive sketches, and holiday-themed sound projects.</p>
-          <p class="cta"><a href="#projects" class="btn">See my work →</a></p>
+          <h2 class="title">Hi, I'm <strong>Harjot Singh</strong></h2>
+          <p class="subtitle">Game Designer & Developer | Creating engaging, meaningful games that educate and inspire</p>
+          <p class="tagline">Passionate about combining creativity with technology using Unity, C#, and industry-standard design practices</p>
+          <p class="cta"><a href="#game-design" class="btn">Explore My Work →</a></p>
         </div>
       </div>
     </section>
 
-    <section id="about" class="container about">
-      <h3>About</h3>
-      <p>I'm Harjot Singh, a student at Thomas A. Edison High School who enjoys creative coding with CodeSkulptor and EarSketch. I focus on animation and audio projects.</p>
-      <h4>My Growth as a Programmer</h4>
-      <p>Programming is like problem-solving. Each project teaches me new challenges and how to break them down. Mistakes help me learn. Tools like CodeSkulptor, EarSketch, and HTML/CSS show creativity in code. I'm excited to keep building.</p>
-    </section>
-
-    <section id="projects" class="container projects">
-      <h3>Projects</h3>
-      <div class="project-grid">
-        <article class="card" aria-labelledby="p1-title">
-          <div class="card-image">
-            <img src="https://github.com/Harjot478/HS_HTML-CSS-review/blob/main/html-css-project.png?raw=true" alt="Screenshot of the portfolio website" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
-          </div>
-          <h4 id="p1-title">Holidays (draw) Animation Project</h4>
-          <p class="project-meta"><strong>Type:</strong> Animation • <strong>Tools:</strong> CodeSkulptor</p>
-          <p>A winter holiday scene where snowflakes fall continuously from the sky while ornaments change colors on the tree.</p>
-              <p><strong>What I Learned:</strong> Learned to use loops for animations and real-time color updates. Timing is key for smooth effects. Testing catches bugs early.</p>
-          <p><a href="https://py3.codeskulptor.org/#user310_b3c7SYk5aM33QeL.py" class="link" target="_blank" rel="noopener noreferrer">View project →</a></p>
-        </article>
-
-        <article class="card" aria-labelledby="p2-title">
-          <div class="card-image">
-            <img src="IMG_0179.jpeg" alt="Image for Holidays Drawing Project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
-          </div>
-          <h4 id="p2-title">Holidays Drawing Project</h4>
-          <p class="project-meta"><strong>Type:</strong> Portfolio / Tech Manual • <strong>Tools:</strong> CodeSkulptor</p>
-              <p>In this assignment I was tasked with creating a snowman and a Christmas tree, a practice in shapes and layering.</p>
-              <p><strong>What I Learned:</strong> Learned to break drawings into shapes like circles and rectangles. Organization and layering are important.</p>
-          <p><a href="https://py3.codeskulptor.org/#user310_MRWGb391oFt5K2k.py" class="link" target="_blank" rel="noopener noreferrer">View project →</a></p>
-        </article>
-
-        <article class="card" aria-labelledby="p3-title">
-          <div class="card-image">
-            <img src="Screenshot 2026-01-20 10.51.43 AM.png" alt="Image for Holiday Remix Challenge" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
-          </div>
-          <h4 id="p3-title">Holiday Remix Challenge</h4>
-          <p class="project-meta"><strong>Type:</strong> Sound • <strong>Tools:</strong> EarSketch</p>
-          <p>Created a holiday-themed sound using EarSketch, focusing on rhythm and layering to evoke a festive mood.</p>
-              <p><strong>What I Learned:</strong> Sound programming is creative. Layering tracks makes music interesting. Audio and visual programming share logic.</p>
-          <p><a href="https://earsketch.gatech.edu/earsketch2/?sharing=aY5XjuSO4s-npxfcyWn7Hw" class="link" target="_blank" rel="noopener noreferrer">Listen / Open →</a></p>
-        </article>
-
-        <article class="card" aria-labelledby="p4-title">
-          <div class="card-image">
-            <img src="Screenshot 2026-05-27 at 8.33.51 PM.png" alt="Screenshot of the Rainforest Game" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
-          </div>
-          <h4 id="p4-title">Rainforest Game</h4>
-          <p class="project-meta"><strong>Type:</strong> Game • <strong>Tools:</strong> Unity</p>
-          <p>An educational game that combines entertainment with learning about environmental issues. Features levels with increasing difficulty, meaningful objectives, scoring systems, obstacles, and collectibles.</p>
-              <p><strong>What I Learned:</strong> I learned how to combine entertainment with education by using gameplay to teach players about environmental issues. I also learned how to design levels with increasing difficulty, create meaningful objectives, and use features like scoring systems, obstacles, and collectibles to make the game more engaging and impactful.</p>
-          <p><a href="https://play.unity.com/en/games/cee8c95d-8753-4f83-957c-6bb353afb3e5/rainforest-game" class="link" target="_blank" rel="noopener noreferrer">Play game →</a></p>
-        </article>
+    <!-- CAREER GOALS SECTION -->
+    <section id="career-goals" class="container section">
+      <div class="section-header">
+        <h2>Career Goals in Game Design</h2>
+        <p class="section-intro">My vision and professional aspirations</p>
+      </div>
+      <div class="goals-grid">
+        <div class="goal-card">
+          <div class="goal-icon">🎮</div>
+          <h3>Game Developer</h3>
+          <p>Create meaningful games that entertain and educate, using industry-standard tools like Unity and Visual Studio. I aim to master C# programming and advanced game mechanics.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🎨</div>
+          <h3>Level Designer</h3>
+          <p>Design compelling game experiences through thoughtful level design, environmental storytelling, and player engagement mechanics that balance challenge with accessibility.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🔊</div>
+          <h3>Multimedia Designer</h3>
+          <p>Integrate VFX, lighting, UI/UX, and audio design to create immersive, polished game experiences that captivate players and convey emotional impact.</p>
+        </div>
+        <div class="goal-card">
+          <div class="goal-icon">🌍</div>
+          <h3>Impact-Driven Creator</h3>
+          <p>Develop games with social and educational impact, leveraging game design to address real-world issues and inspire meaningful change in players.</p>
+        </div>
+      </div>
+      <div class="goals-statement">
+        <h3>My Professional Vision</h3>
+        <p>I am pursuing a career in game design to combine my passion for storytelling, problem-solving, and technology. I believe games are powerful mediums for education, entertainment, and social impact. Through continuous learning and experimentation with tools like Unity, GitHub, and Visual Studio, I aim to create games that are not only technically sound but also emotionally resonant and culturally significant. My goal is to contribute to the game development industry as a skilled developer who understands the intersection of art, technology, and human psychology.</p>
       </div>
     </section>
 
-    <section id="skills" class="container skills">
-      <h3>Skills</h3>
-      <ul class="skill-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Creative</li>
-      </ul>
+    <!-- GAME DESIGN COLLECTION -->
+    <section id="game-design" class="container section">
+      <div class="section-header">
+        <h2>Game Design Collection</h2>
+        <p class="section-intro">Showcasing development work and proficiency in industry tools</p>
+      </div>
+      
+      <div class="artifacts-section">
+        <h3 class="subsection-title">Featured Project: Rainforest Game</h3>
+        <div class="artifact-featured">
+          <div class="artifact-visual">
+            <img src="Screenshot 2026-05-27 at 8.33.51 PM.png" alt="Rainforest Game Gameplay" class="artifact-image">
+          </div>
+          <div class="artifact-details">
+            <div class="artifact-header">
+              <h4>Rainforest Game</h4>
+              <div class="artifact-tags">
+                <span class="tag">Game Development</span>
+                <span class="tag">Educational</span>
+                <span class="tag">Environmental Storytelling</span>
+              </div>
+            </div>
+            <p class="artifact-description">An educational game combining entertainment with environmental awareness. Players navigate through rainforest levels while learning about biodiversity and conservation challenges.</p>
+            
+            <div class="artifact-info">
+              <div class="info-item">
+                <strong>Tools & Technologies:</strong>
+                <span>Unity Engine, C#, Visual Studio</span>
+              </div>
+              <div class="info-item">
+                <strong>Features:</strong>
+                <span>Level progression, scoring systems, collectible mechanics, obstacles, environmental hazards, UI/UX design</span>
+              </div>
+              <div class="info-item">
+                <strong>Skills Demonstrated:</strong>
+                <span>Core Programming (C#), Level Design, Game Mechanics, Educational Design, VFX Integration</span>
+              </div>
+            </div>
+
+            <div class="artifact-reflection">
+              <h5>Development Reflection</h5>
+              <p>This project taught me the power of game design as an educational medium. By integrating gameplay mechanics that reinforce environmental learning, I created a compelling experience that entertains while educating. I learned to balance difficulty progression to maintain player engagement while ensuring learning objectives are met. The iterative playtesting process revealed that visual feedback (such as animations and particles) significantly enhanced player understanding of environmental concepts. Through this project, I mastered level design principles, scoring system implementation, and the importance of user experience in educational games.</p>
+            </div>
+
+            <p><a href="https://play.unity.com/en/games/cee8c95d-8753-4f83-957c-6bb353afb3e5/rainforest-game" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Play Game →</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="artifacts-section">
+        <h3 class="subsection-title">Creative & Technical Projects</h3>
+        <div class="artifact-grid">
+          <article class="artifact-card">
+            <div class="artifact-image-container">
+              <img src="https://github.com/Harjot478/HS_HTML-CSS-review/blob/main/html-css-project.png?raw=true" alt="Holiday Animation Project">
+              <span class="artifact-badge">Animation</span>
+            </div>
+            <div class="artifact-content">
+              <h4>Holiday Animation Project</h4>
+              <p class="artifact-meta">CodeSkulptor | Python Animation</p>
+              <p>Animated winter scene with falling snowflakes and color-changing ornaments. Demonstrates real-time rendering and animation loop optimization.</p>
+              <p class="artifact-skills"><strong>Skills:</strong> Python, Animation Loops, Real-time Graphics, Event Handling</p>
+              <a href="https://py3.codeskulptor.org/#user310_b3c7SYk5aM33QeL.py" class="link" target="_blank" rel="noopener noreferrer">View Code →</a>
+            </div>
+          </article>
+
+          <article class="artifact-card">
+            <div class="artifact-image-container">
+              <img src="IMG_0179.jpeg" alt="Holiday Drawing Project">
+              <span class="artifact-badge">Graphics</span>
+            </div>
+            <div class="artifact-content">
+              <h4>Geometric Drawing Project</h4>
+              <p class="artifact-meta">CodeSkulptor | Shape Programming</p>
+              <p>Constructed complex shapes (snowman, tree) from basic primitives. Demonstrates understanding of coordinate systems and layering principles essential to game graphics.</p>
+              <p class="artifact-skills"><strong>Skills:</strong> Geometry, Coordinate Systems, Visual Composition, Shape Manipulation</p>
+              <a href="https://py3.codeskulptor.org/#user310_MRWGb391oFt5K2k.py" class="link" target="_blank" rel="noopener noreferrer">View Code →</a>
+            </div>
+          </article>
+
+          <article class="artifact-card">
+            <div class="artifact-image-container">
+              <img src="Screenshot 2026-01-20 10.51.43 AM.png" alt="Holiday Remix Challenge">
+              <span class="artifact-badge">Audio</span>
+            </div>
+            <div class="artifact-content">
+              <h4>Audio Design & Composition</h4>
+              <p class="artifact-meta">EarSketch | Sound Programming</p>
+              <p>Composed holiday-themed audio with layered tracks, rhythm patterns, and dynamic mixing. Shows proficiency in audio design for games and interactive media.</p>
+              <p class="artifact-skills"><strong>Skills:</strong> Audio Programming, Music Composition, Sound Mixing, Rhythm Programming</p>
+              <a href="https://earsketch.gatech.edu/earsketch2/?sharing=aY5XjuSO4s-npxfcyWn7Hw" class="link" target="_blank" rel="noopener noreferrer">Listen →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tools-proficiency">
+        <h3>Industry Tools & Proficiency</h3>
+        <div class="tools-showcase">
+          <div class="tool-item">
+            <span class="tool-logo">⚙️</span>
+            <h4>Unity Engine</h4>
+            <p>Scene management, prefab systems, physics, particle effects</p>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo">💻</span>
+            <h4>C# Programming</h4>
+            <p>Object-oriented design, scripting, game logic</p>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo">🔧</span>
+            <h4>Visual Studio</h4>
+            <p>Debugging, version control integration, project management</p>
+          </div>
+          <div class="tool-item">
+            <span class="tool-logo">📦</span>
+            <h4>GitHub</h4>
+            <p>Version control, collaboration, portfolio hosting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITERATIVE DESIGN DOCUMENTATION -->
+    <section id="iterative-design" class="container section">
+      <div class="section-header">
+        <h2>Iterative Design Process</h2>
+        <p class="section-intro">Understanding design evolution from concept to implementation</p>
+      </div>
+
+      <div class="design-process">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Brainstorming & Concept</h3>
+            <p>Every project begins with brainstorming sessions where I explore creative possibilities, define project scope, and establish clear objectives. For the Rainforest Game, I sketched initial concepts focusing on how education could be seamlessly integrated into gameplay.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Wireframes & Flowcharts</h3>
+            <p>I create detailed wireframes mapping out user interfaces and flowcharts showing game navigation paths. These visual blueprints guide development and ensure consistent user experience throughout the game.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Game Design Document (GDD)</h3>
+            <p>Comprehensive documentation outlining game mechanics, level design, character progression, art direction, and audio specifications. This serves as the reference guide for all team members and ensures design consistency.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>Prototyping</h3>
+            <p>Building quick prototypes to test core mechanics and validate design decisions. Rapid prototyping allows me to identify issues early and iterate on solutions before full development.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>Playtesting & Feedback</h3>
+            <p>Conducting structured playtesting sessions with target audiences to gather qualitative feedback. I analyze player behavior, identify pain points, and collect suggestions for improvement.</p>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">6</div>
+          <div class="step-content">
+            <h3>Refinement & Polish</h3>
+            <p>Implementing feedback, refining game balance, enhancing visual effects, and optimizing performance. This iterative refinement continues until the game meets quality standards and design goals.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="design-artifacts">
+        <h3>Sample Design Documentation</h3>
+        <p>While full design documents are maintained in private repositories, below are key design principles I follow:</p>
+        
+        <div class="principle-cards">
+          <div class="principle-card">
+            <h4>Level Design Philosophy</h4>
+            <ul>
+              <li>Progressive difficulty curves</li>
+              <li>Clear learning objectives</li>
+              <li>Player agency and choice</li>
+              <li>Meaningful feedback loops</li>
+              <li>Environmental storytelling</li>
+            </ul>
+          </div>
+
+          <div class="principle-card">
+            <h4>Mechanics Design</h4>
+            <ul>
+              <li>Core loop clarity</li>
+              <li>Intuitive controls</li>
+              <li>Immediate feedback</li>
+              <li>Balanced challenge vs. reward</li>
+              <li>Player progression tracking</li>
+            </ul>
+          </div>
+
+          <div class="principle-card">
+            <h4>Educational Integration</h4>
+            <ul>
+              <li>Learning through play</li>
+              <li>Authentic problem-solving</li>
+              <li>Content accuracy</li>
+              <li>Adaptive difficulty</li>
+              <li>Assessment without penalizing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREATIVE PROJECTS & COMPETITIONS -->
+    <section id="competitions" class="container section">
+      <div class="section-header">
+        <h2>Creative Projects & Competitions</h2>
+        <p class="section-intro">Participation in competitions and challenges</p>
+      </div>
+
+      <div class="competition-info">
+        <h3>Commitment to Competition</h3>
+        <p>I actively participate in game design competitions and creative challenges to test my skills, gain recognition, and contribute to the broader game development community. These competitions provide valuable opportunities to:</p>
+        <ul class="benefit-list">
+          <li>Challenge myself with creative themes and constraints</li>
+          <li>Receive feedback from industry professionals</li>
+          <li>Showcase work to peers and potential collaborators</li>
+          <li>Learn from other participants' approaches</li>
+          <li>Build a portfolio of competition submissions</li>
+        </ul>
+      </div>
+
+      <div class="competitions-gallery">
+        <div class="competition-card">
+          <div class="competition-header">
+            <h3>Games for Change (G4C)</h3>
+            <span class="competition-badge">Social Impact</span>
+          </div>
+          <p>A leading international competition celebrating games that have the power to positively impact social change. My submissions focus on environmental education and cultural awareness through interactive play.</p>
+          <div class="competition-meta">
+            <p><strong>Theme Focus:</strong> Educational and environmental storytelling</p>
+            <p><strong>My Approach:</strong> Creating engaging gameplay mechanics that naturally teach players about real-world issues</p>
+          </div>
+        </div>
+
+        <div class="competition-card">
+          <div class="competition-header">
+            <h3>Emoticon CS Fair</h3>
+            <span class="competition-badge">Computer Science</span>
+          </div>
+          <p>A celebration of student computer science projects showcasing innovation, creativity, and technical excellence. I present my game design work highlighting the programming and design challenges overcome.</p>
+          <div class="competition-meta">
+            <p><strong>Theme Focus:</strong> Technical innovation and creative problem-solving</p>
+            <p><strong>My Approach:</strong> Demonstrating advanced C# techniques and game design principles</p>
+          </div>
+        </div>
+
+        <div class="competition-card">
+          <div class="competition-header">
+            <h3>InfyAPP Challenge</h3>
+            <span class="competition-badge">Application Development</span>
+          </div>
+          <p>A global competition encouraging students to develop innovative applications. While focused on broader app development, I use this platform to showcase game design applications and interactive experiences.</p>
+          <div class="competition-meta">
+            <p><strong>Theme Focus:</strong> Innovation and real-world solutions</p>
+            <p><strong>My Approach:</strong> Leveraging game mechanics to solve problems creatively</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="competition-outcomes">
+        <h3>Learning & Growth from Competition</h3>
+        <p>Through competition participation, I've learned to:</p>
+        <ul class="outcome-list">
+          <li>Work under time constraints while maintaining quality</li>
+          <li>Communicate design intentions clearly to diverse audiences</li>
+          <li>Handle constructive criticism and iterate rapidly</li>
+          <li>Understand market trends and player expectations</li>
+          <li>Develop resilience and learn from both success and setbacks</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- REFLECTION & PROFESSIONALISM -->
+    <section id="reflection" class="container section">
+      <div class="section-header">
+        <h2>Reflection & Professional Growth</h2>
+        <p class="section-intro">Self-awareness, learning, and career development</p>
+      </div>
+
+      <div class="reflection-content">
+        <div class="reflection-box">
+          <h3>Journey in Game Design</h3>
+          <p>My path into game design began with a simple question: "How can I combine my love of creative storytelling with programming?" The answer emerged through experimentation with various tools—from CodeSkulptor to EarSketch to Unity. Each project taught me valuable lessons about design, technology, and human psychology.</p>
+          
+          <p>Starting with animation and audio projects, I developed fundamental programming skills and creative problem-solving abilities. These projects taught me that game development is not just about coding; it's about understanding how to engage, challenge, and entertain audiences. The transition to game development in Unity represented a significant leap—suddenly, all those individual skills (graphics, audio, logic, design) converged into a cohesive interactive experience.</p>
+        </div>
+
+        <div class="reflection-box">
+          <h3>Strengths I've Developed</h3>
+          <div class="strengths-list">
+            <div class="strength-item">
+              <h4>Creative Problem-Solving</h4>
+              <p>I approach challenges by breaking them into manageable components, exploring multiple solutions, and iterating based on feedback. This mindset has been crucial in overcoming technical and design obstacles.</p>
+            </div>
+            <div class="strength-item">
+              <h4>Technical Proficiency</h4>
+              <p>Through hands-on experience with industry tools, I've developed solid programming fundamentals in C#, understanding of game architecture, and ability to optimize performance. I continue learning new technologies regularly.</p>
+            </div>
+            <div class="strength-item">
+              <h4>Design Thinking</h4>
+              <p>I understand that great games aren't just technically impressive—they're intuitively designed experiences. I focus on player psychology, accessibility, and creating meaningful interactions.</p>
+            </div>
+            <div class="strength-item">
+              <h4>Collaboration & Communication</h4>
+              <p>Using GitHub and collaborative tools, I've learned to work effectively with others, document decisions clearly, and accept feedback gracefully. Clear communication is essential in game development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reflection-box">
+          <h3>Challenges & Growth Areas</h3>
+          <p>Like any learning journey, I've faced challenges that have shaped my development:</p>
+          <ul>
+            <li><strong>Scope Management:</strong> Early projects tried to do too much. I've learned to define clear MVP (Minimum Viable Product) goals and expand systematically.</li>
+            <li><strong>Performance Optimization:</strong> Creating visually impressive games revealed the importance of optimization. I now prioritize efficient code and smart resource management.</li>
+            <li><strong>Playtesting Balance:</strong> Recognizing personal bias in design, I've embraced structured playtesting to gather objective feedback and iterate based on actual user behavior.</li>
+            <li><strong>Documentation Discipline:</strong> I continue improving my ability to document code and design decisions thoroughly for future reference and collaboration.</li>
+          </ul>
+        </div>
+
+        <div class="reflection-box">
+          <h3>Vision for the Future</h3>
+          <p>As I continue my game design education, I'm committed to:</p>
+          <ul>
+            <li><strong>Deepening Technical Skills:</strong> Mastering advanced C# patterns, learning shader programming, and understanding game optimization at deeper levels.</li>
+            <li><strong>Exploring Diverse Genres:</strong> Expanding beyond educational games to explore narrative design, multiplayer mechanics, and emerging platforms.</li>
+            <li><strong>Building a Professional Portfolio:</strong> Creating 3-5 polished, publication-ready games that demonstrate my range and professionalism.</li>
+            <li><strong>Contributing to the Community:</strong> Sharing knowledge through tutorials, open-source projects, and mentoring aspiring game designers.</li>
+            <li><strong>Pursuing Industry Experience:</strong> Securing internships or entry-level positions at game studios to learn from experienced professionals.</li>
+          </ul>
+        </div>
+
+        <div class="reflection-conclusion">
+          <h3>Final Statement</h3>
+          <p>Game design represents the intersection of art, technology, and human psychology—three domains that fascinate me deeply. Through my work in this field, I've discovered not just a career path, but a calling to create experiences that matter. Whether through educational games that teach important concepts, entertaining experiences that bring joy, or interactive narratives that provoke thought, I'm committed to using game design as a medium for positive impact.</p>
+          
+          <p>The journey from my first CodeSkulptor animation to developing full games in Unity has taught me humility, resilience, and the power of continuous learning. I'm grateful for the opportunities I've had to develop these skills and excited for the challenges and opportunities ahead. I'm ready to take my passion for game design to the next level and contribute meaningfully to this dynamic industry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="container section">
+      <h2>Technical Skills & Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming</h3>
+          <ul class="skill-list">
+            <li>C# (Advanced)</li>
+            <li>Python (Intermediate)</li>
+            <li>JavaScript (Intermediate)</li>
+            <li>HTML/CSS (Advanced)</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Game Development</h3>
+          <ul class="skill-list">
+            <li>Unity Engine</li>
+            <li>Game Mechanics</li>
+            <li>Level Design</li>
+            <li>Physics Systems</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Multimedia & Design</h3>
+          <ul class="skill-list">
+            <li>VFX & Particles</li>
+            <li>UI/UX Design</li>
+            <li>Audio Programming</li>
+            <li>Visual Composition</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Professional Tools</h3>
+          <ul class="skill-list">
+            <li>Visual Studio</li>
+            <li>GitHub</li>
+            <li>Version Control (Git)</li>
+            <li>Project Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="container section">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p class="section-intro">Let's connect and collaborate</p>
+      </div>
+      <div class="contact-info">
+        <p>I'm always interested in discussing game design, collaborating on projects, or exploring opportunities in the industry.</p>
+        <div class="contact-links">
+          <a href="https://github.com/Harjot478" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon">🐙</span> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/harjot-singh-a86337390" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <span class="link-icon">💼</span> LinkedIn
+          </a>
+          <a href="mailto:harjots2789@nycstudents.net" class="contact-link">
+            <span class="link-icon">✉️</span> Email
+          </a>
+        </div>
+      </div>
     </section>
 
   </main>

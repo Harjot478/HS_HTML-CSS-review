@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harjot Singh | Game Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="roblox-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 class="logo">Harjot Singh</h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#career-goals">Career Goals</a>
+        <a href="#game-design">Game Design</a>
+        <a href="#iterative-design">Design Process</a>
+        <a href="#competitions">Competitions</a>
+        <a href="#reflection">Reflection</a>
+        <a href="#contact">Contact</a>
+      </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="true" title="Toggle theme">Toggle Theme</button>
+
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <!-- HERO / HOME SECTION -->
+    <section id="home" class="hero container">
+      <div class="hero-content">
+        <img src="assets/profile.png" alt="Profile picture of Harjot Singh" class="avatar">
+        <div class="hero-text">
+          <h2 class="title">Hi, I'm <strong>Harjot Singh</strong></h2>
+          <p class="subtitle">Game Designer & Developer | Creating engaging, meaningful games that educate and inspire</p>
+          <p class="tagline">Passionate about combining creativity with technology using Unity, C#, and industry-standard design practices</p>
+          <p class="cta"><a href="#game-design" class="btn">Explore My Work →</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I'm Harjot Singh, a student at Thomas A. Edison High School who enjoys creative coding with CodeSkulptor and EarSketch. I focus on animation and audio projects.</p>
+      <h4>My Growth as a Programmer</h4>
+      <p>Programming is like problem-solving. Each project teaches me new challenges and how to break them down. Mistakes help me learn. Tools like CodeSkulptor, EarSketch, and HTML/CSS show creativity in code. I'm excited to keep building.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="project-grid">
+        <article class="card" aria-labelledby="p1-title">
+          <div class="card-image">
+            <img src="https://github.com/Harjot478/HS_HTML-CSS-review/blob/main/html-css-project.png?raw=true" alt="Screenshot of the portfolio website" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
+          </div>
+          <h4 id="p1-title">Holidays (draw) Animation Project</h4>
+          <p class="project-meta"><strong>Type:</strong> Animation • <strong>Tools:</strong> CodeSkulptor</p>
+          <p>A winter holiday scene where snowflakes fall continuously from the sky while ornaments change colors on the tree.</p>
+              <p><strong>What I Learned:</strong> Learned to use loops for animations and real-time color updates. Timing is key for smooth effects. Testing catches bugs early.</p>
+          <p><a href="https://py3.codeskulptor.org/#user310_b3c7SYk5aM33QeL.py" class="link" target="_blank" rel="noopener noreferrer">View project →</a></p>
+        </article>
+
+        <article class="card" aria-labelledby="p2-title">
+          <div class="card-image">
+            <img src="IMG_0179.jpeg" alt="Image for Holidays Drawing Project" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
+          </div>
+          <h4 id="p2-title">Holidays Drawing Project</h4>
+          <p class="project-meta"><strong>Type:</strong> Portfolio / Tech Manual • <strong>Tools:</strong> CodeSkulptor</p>
+              <p>In this assignment I was tasked with creating a snowman and a Christmas tree, a practice in shapes and layering.</p>
+              <p><strong>What I Learned:</strong> Learned to break drawings into shapes like circles and rectangles. Organization and layering are important.</p>
+          <p><a href="https://py3.codeskulptor.org/#user310_MRWGb391oFt5K2k.py" class="link" target="_blank" rel="noopener noreferrer">View project →</a></p>
+        </article>
+
+        <article class="card" aria-labelledby="p3-title">
+          <div class="card-image">
+            <img src="Screenshot 2026-01-20 10.51.43 AM.png" alt="Image for Holiday Remix Challenge" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
+          </div>
+          <h4 id="p3-title">Holiday Remix Challenge</h4>
+          <p class="project-meta"><strong>Type:</strong> Sound • <strong>Tools:</strong> EarSketch</p>
+          <p>Created a holiday-themed sound using EarSketch, focusing on rhythm and layering to evoke a festive mood.</p>
+              <p><strong>What I Learned:</strong> Sound programming is creative. Layering tracks makes music interesting. Audio and visual programming share logic.</p>
+          <p><a href="https://earsketch.gatech.edu/earsketch2/?sharing=aY5XjuSO4s-npxfcyWn7Hw" class="link" target="_blank" rel="noopener noreferrer">Listen / Open →</a></p>
+        </article>
+
+        <article class="card" aria-labelledby="p4-title">
+          <div class="card-image">
+            <img src="Screenshot 2026-05-27 at 8.33.51 PM.png" alt="Screenshot of the Rainforest Game" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
+          </div>
+          <h4 id="p4-title">Rainforest Game</h4>
+          <p class="project-meta"><strong>Type:</strong> Game • <strong>Tools:</strong> Unity</p>
+          <p>An educational game that combines entertainment with learning about environmental issues. Features levels with increasing difficulty, meaningful objectives, scoring systems, obstacles, and collectibles.</p>
+              <p><strong>What I Learned:</strong> I learned how to combine entertainment with education by using gameplay to teach players about environmental issues. I also learned how to design levels with increasing difficulty, create meaningful objectives, and use features like scoring systems, obstacles, and collectibles to make the game more engaging and impactful.</p>
+          <p><a href="https://play.unity.com/en/games/cee8c95d-8753-4f83-957c-6bb353afb3e5/rainforest-game" class="link" target="_blank" rel="noopener noreferrer">Play game →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h3>Skills</h3>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Creative</li>
+      </ul>
+    </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© Harjot Singh, <a href="https://github.com/Harjot478" aria-label="GitHub">GitHub</a> • <a href="https://www.linkedin.com/in/harjot-singh-a86337390" aria-label="LinkedIn">LinkedIn</a> • <a href="mailto:harjots2789@nycstudents.net">Email</a></small>
+    </div>
+  </footer>
+  <script>
+    (function(){
+      const body = document.body;
+      const btn = document.getElementById('theme-toggle');
+      try{
+        const stored = localStorage.getItem('theme');
+        if(stored === 'dark') body.classList.add('roblox-dark');
+        else if(stored === 'light') body.classList.remove('roblox-dark');
+      }catch(e){}
+      if(btn){
+        btn.addEventListener('click', function(){
+          const isNowDark = body.classList.toggle('roblox-dark');
+          try{ localStorage.setItem('theme', isNowDark ? 'dark' : 'light'); }catch(e){}
+          btn.setAttribute('aria-pressed', isNowDark ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
