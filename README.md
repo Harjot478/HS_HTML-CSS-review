@@ -12,10 +12,10 @@ This is my portfolio website, made by Harjot Singh.
 
 ## My Projects
 
-- **Holidays Animation Project** (Animation) with CodeSkulptor
-  - Link: https://py3.codeskulptor.org/#user310_b3c7SYk5aM33QeL.py
-  - Done: Yes
-  - Notes: Snow falling and ornaments changing colors.
+- **Figma Design Practice** (Interface Design)
+  - Link: https://www.figma.com/design/HR48JvY9nWWY4H4dkQzwuu/Practice?node-id=1-2&p=f&t=k91VnokEnPy9Z2c6-0
+  - Screenshot: https://plain-enam-prod-public.komododecks.com/202611/08/BCdmFNDptdd7oxjx62HO/image.png
+  - Notes: A design project exploring interface layout and visual design in Figma.
 
 - **Youth Opportunities App** (App Design) with Team Intellectuals for the Infy App Challenge
   - Link: https://sadiyahtaehs.github.io/TeamIntellectuals_InfyApp26/
