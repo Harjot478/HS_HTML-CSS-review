@@ -13,7 +13,7 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <h1 class="logo">Harjot Singh</h1>
-      <nav class="nav" aria-label="Main navigation">
+      <nav class="nav" aria-label="Main navigation" hidden>
         <a href="#home">Home</a>
         <a href="#career-goals">Pharma Career Goals</a>
         <a href="#game-design">Game Design</a>
@@ -32,11 +32,16 @@
           <h2 class="title">Hi, I'm <strong>Harjot Singh</strong></h2>
           <p class="subtitle">Aspiring Pharma Professional | Interested in medicines, healthcare, and helping people</p>
           <p class="tagline">Curious about how science and research can support safer medicines and healthier lives</p>
-          <p class="cta"><a href="#game-design" class="btn">Explore My Work →</a></p>
+          <p class="cta">
+            <button type="button" id="explore-work" class="btn" aria-expanded="false" aria-controls="portfolio-content">
+              Explore My Work →
+            </button>
+          </p>
         </div>
       </div>
     </section>
 
+    <div id="portfolio-content" hidden>
     <!-- CAREER GOALS SECTION -->
     <section id="career-goals" class="container section">
       <div class="section-header">
@@ -272,14 +277,32 @@
         </div>
       </div>
     </section>
+    </div>
 
   </main>
 
-  <footer class="site-footer">
+  <footer id="portfolio-footer" class="site-footer" hidden>
     <div class="container footer-inner">
       <small>© Harjot Singh, <a href="https://github.com/Harjot478" aria-label="GitHub">GitHub</a> • <a href="https://www.linkedin.com/in/harjot-singh-a86337390" aria-label="LinkedIn">LinkedIn</a> • <a href="mailto:harjots2789@nycstudents.net">Email</a></small>
     </div>
   </footer>
 
+  <script>
+    const exploreWorkButton = document.getElementById('explore-work');
+    const portfolioContent = document.getElementById('portfolio-content');
+    const portfolioNav = document.querySelector('.nav');
+    const portfolioFooter = document.getElementById('portfolio-footer');
+
+    exploreWorkButton.addEventListener('click', () => {
+      portfolioContent.hidden = false;
+      portfolioNav.hidden = false;
+      portfolioFooter.hidden = false;
+      exploreWorkButton.setAttribute('aria-expanded', 'true');
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.getElementById('career-goals').scrollIntoView({
+        behavior: reduceMotion ? 'auto' : 'smooth'
+      });
+    });
+  </script>
 </body>
 </html>

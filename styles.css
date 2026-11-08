@@ -12,6 +12,14 @@ body {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   line-height: 1.5;
@@ -81,6 +89,23 @@ body {
 
 .nav a:hover {
   color: var(--text);
+}
+
+#portfolio-content,
+#portfolio-footer,
+.nav:not([hidden]) {
+  animation: portfolio-reveal 600ms ease-out both;
+}
+
+@keyframes portfolio-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================
@@ -316,6 +341,16 @@ body {
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  #portfolio-content,
+  #portfolio-footer,
+  .nav:not([hidden]) {
+    animation: none;
   }
 }
 
