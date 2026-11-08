@@ -22,10 +22,9 @@ This is my portfolio website, made by Harjot Singh.
   - Done: Yes
   - Notes: Built a snowman and a Christmas tree using shapes.
 
-- **Holiday Remix Challenge** (Sound) with EarSketch
-  - Link: https://earsketch.gatech.edu/earsketch2/?sharing=aY5XjuSO4s-npxfcyWn7Hw
-  - Done: Yes
-  - Notes: Created a holiday sound with rhythm and layering.
+- **Youth Opportunities App** (App Design) with Team Intellectuals for the Infy App Challenge
+  - Link: https://sadiyahtaehs.github.io/TeamIntellectuals_InfyApp26/
+  - Notes: An app concept to help teens and young adults find personalized job opportunities, build experience, and prepare for the future job market.
 
 - **Rainforest Game** (Unity)
   - Link: https://play.unity.com/en/games/cee8c95d-8753-4f83-957c-6bb353afb3e5/rainforest-game
