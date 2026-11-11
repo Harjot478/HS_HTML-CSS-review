@@ -412,8 +412,8 @@ body {
 ========================= */
 .resume-card {
   display: grid;
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-  gap: 32px;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 28px;
   align-items: start;
   background: var(--panel);
   padding: 32px;
@@ -423,6 +423,8 @@ body {
 
 .resume-preview {
   display: block;
+  width: 160px;
+  max-width: 100%;
   overflow: hidden;
   background: #fff;
   border-radius: 8px;
@@ -879,7 +881,7 @@ body {
   }
 
   .resume-preview {
-    max-width: 420px;
+    width: 160px;
     margin: 0 auto;
   }
   
