@@ -408,6 +408,71 @@ body {
 }
 
 /* =========================
+   RESUME
+========================= */
+.resume-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 32px;
+  align-items: start;
+  background: var(--panel);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(226,184,75,0.1);
+}
+
+.resume-preview {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.45);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.resume-preview:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.55), var(--glow);
+}
+
+.resume-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.resume-details h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.resume-summary {
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.resume-highlight {
+  margin-bottom: 20px;
+}
+
+.resume-highlight h4 {
+  color: var(--accent);
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.resume-highlight p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resume-highlight strong {
+  color: var(--text);
+}
+
+/* =========================
    ARTIFACTS & GAME DESIGN
 ========================= */
 .artifacts-section {
@@ -807,6 +872,15 @@ body {
 @media (max-width: 768px) {
   .artifact-featured {
     grid-template-columns: 1fr;
+  }
+
+  .resume-card {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-preview {
+    max-width: 420px;
+    margin: 0 auto;
   }
   
   .info-item {
